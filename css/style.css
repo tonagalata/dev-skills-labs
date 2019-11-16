@@ -1,0 +1,32 @@
+body {
+  border: solid  2px gray;
+  text-align: center;
+  height: 95vh;
+  min-width: 95vh;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 15px;
+}
+
+h1 {
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-top: 20vh;
+  font-size: xx-large;
+}
+
+input {
+  color: #5cb85c;
+  font-weight: 500;
+}
+
+.skill-list {
+  align-content: center;
+  align-items: center;
+}
+
+.skills {
+  list-style-type: none;
+}
