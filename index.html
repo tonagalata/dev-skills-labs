@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Developer Skills</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Developer Skills</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script defer src="./js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1 class="p-3 mb-2 bg-success text-white">My Developer Skills</h1>
-  <div class="skill-list">
-    <ul class="skills">
-      <li>Test 1</li>
-      <li>Test 2</li>
-      <li>Test 3</li>
-      <li>Test 4</li>
-      <li>Test 5</li>
-    </ul>
-    <input type="text"> 
-    <button type="button" class="btn btn-outline-success">ADD SKILLS</button>
-  </div>
+    <main class="container">
+
+  <h2 class="p-3 mb-2 bg-light text-dark">My Developer Skills</h2>
+
+  <table id="skills" class="table">
+    <tbody>
+      <!-- <tr>
+        <td>Javascript<button type="button" class="close" aria-label="Close"><span id= "remove-skill"aria-hidden="true">&times;</span>
+        </button></td>
+      </tr> -->
+    </tbody>
+  </table>
+  <br>
+  <div>
+  <input type="text"> 
+  <button id="add-skill" class="btn btn-light btn-lg btn">ADD SKILLS</button>
+</div>
+</div>
+</main>
 </body>
 </html>
