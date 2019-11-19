@@ -2,9 +2,6 @@ const $arrList = [];
 const $removedSkills = [];
 let $newSkill;
 
-// const $closeButton = document.querySelector('tr button')
-// $closeButton.setAttribute('style', 'float: left; padding-right: 1.5em;')
-
 $(document).ready(function (){
   $('#add-skill').click(function(evt){
 
@@ -16,6 +13,8 @@ $(document).ready(function (){
     console.log($newSkill)
 
     if($newSkill == '' || $newSkill == ' '){
+      let $formInvld = document.querySelector('input');
+      $formInvld.classList.add('is-invalid'); 
       return alert('Please enter a skill');
     }
     
@@ -34,34 +33,15 @@ $(document).ready(function (){
       $arrList.push($newSkill +'\n×')
       $removedSkills.push($newSkill +'\n×')
       document.querySelector('input').value = '';
-      // console.log(arrList.indexOf($newSkill))
-      // console.log(arrList)
     }else {
       return alert('Skill already entered, please add another skill that is not on the list');
     }
   });
 
-  // for(let i = 0; i < $arrList.length; i++){
-  //   const $skillsTd = 
-  //   $(`<td><button type="button" class="close" aria-label="Close"><span id="remove-skill" aria-hidden="true">×</span>
-  //   </button></td>`);
-    
-    
-    
-  //   document.querySelector('td').;
-  //   $('.table tbody').append($addedSkills);
-  // }
- 
-
   $('#skills tbody').on('click', 'button', function() {
     $(this).closest('tr').fadeOut(500, function() {
-      // console.log($(this).closest('tr'));
-      // console.log($(this).closest('tr')[0].textContent);
       $(this).remove()
       $arrList.splice($removedSkills.indexOf($newSkill), 1)
-      // console.log($arrList)
-      // console.log($removedSkills)
-      // console.log($arrList.indexOf($newSkill))
     });
   });
   });
