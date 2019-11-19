@@ -13,8 +13,8 @@ $(document).ready(function (){
     console.log($newSkill)
 
     if($newSkill == '' || $newSkill == ' '){
-      let $formInvld = document.querySelector('input');
-      $formInvld.classList.add('is-invalid'); 
+      // let $formInvld = document.querySelector('input');
+      // $formInvld.classList.add('is-invalid'); 
       return alert('Please enter a skill');
     }
     
