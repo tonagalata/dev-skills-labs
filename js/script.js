@@ -11,11 +11,14 @@ $(document).ready(function (){
 
 
     console.log($newSkill)
+    
+    let $formInvld = document.querySelector('.needs-validation');
 
-    if($newSkill == '' || $newSkill == ' '){
-      // let $formInvld = document.querySelector('input');
-      // $formInvld.classList.add('is-invalid'); 
+    if($formInvld.checkValidity() === false && $newSkill == '' || $newSkill == ' '){
+      evt.stopPropagation();
       return alert('Please enter a skill');
+    } else {
+      $formInvld.classList.add('was-validated');
     }
     
     if($newSkill.length > 0 && !($arrList.includes($newSkill +'\n×'))){
